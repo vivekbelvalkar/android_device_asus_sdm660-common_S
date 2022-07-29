@@ -28,9 +28,9 @@ LOCAL_SHARED_LIBRARIES := \
 
 LOCAL_C_INCLUDES += \
     $(call include-path-for,audio-route) \
-    $(call project-path-for,qcom-audio)/hal \
-    $(call project-path-for,qcom-audio)/hal/msm8974 \
-    $(call project-path-for,qcom-audio)/hal/audio_extn
+    hardware/qcom/audio/hal/ \
+    hardware/qcom/audio/hal/msm8974 \
+    hardware/qcom/audio/hal/audio_extn
 
 LOCAL_SRC_FILES := audio_amplifier.c
 LOCAL_MODULE := audio_amplifier.$(TARGET_BOARD_PLATFORM)
